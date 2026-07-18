@@ -36,7 +36,7 @@ export const CountdownView = () => {
     >
       <Page.Center>
         <Countdown>
-          <h1 className="h1">{displayNumberOfDays}</h1>
+          <h1 className="text-5xl">{displayNumberOfDays}</h1>
         </Countdown>
 {/* 
         <input

@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+
+:root {
+  font-family: "Quicksand", sans-serif;
+}
+
+@theme {
+  --font-heading: "Cookie", cursive;
+  --font-body: "Quicksand", sans-serif;
+}

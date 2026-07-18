@@ -6,7 +6,7 @@ import { twMerge } from "tailwind-merge";
 
 export function getDaysLeft(endDate: Date = END_DATE): number {
   const now = new Date();
-  const timeDiff = differenceInDays(endDate, now);
+  const timeDiff = differenceInDays(endDate, now) + 1;
   return timeDiff;
 }
 
