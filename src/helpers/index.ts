@@ -1,12 +1,12 @@
-import { differenceInDays } from "date-fns";
-import { END_DATE } from "../constants";
 import type { ClassValue } from "clsx";
 import clsx from "clsx";
+import { differenceInCalendarDays } from "date-fns";
 import { twMerge } from "tailwind-merge";
+import { END_DATE } from "../constants";
 
 export function getDaysLeft(endDate: Date = END_DATE): number {
   const now = new Date();
-  const timeDiff = differenceInDays(endDate, now) + 1;
+  const timeDiff = differenceInCalendarDays(endDate, now);
   return timeDiff;
 }
 

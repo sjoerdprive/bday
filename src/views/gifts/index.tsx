@@ -15,8 +15,8 @@ export const GiftsView = () => {
     if (usedGifts.isItemUsed(gift) || isTodayUsed) {
       return;
     }
-    // usedDates.addUsedItem(today);
-    // usedGifts.addUsedItem(gift);
+    usedDates.addUsedItem(today);
+    usedGifts.addUsedItem(gift);
   };
 
   return (
@@ -25,7 +25,7 @@ export const GiftsView = () => {
         <div className="flex flex-col items-center gap-8">
           <hgroup className="flex flex-col items-center gap-4">
             <h1 className="font-heading text-7xl leading-14 text-center">
-              Saars verjaardafgsvierdaagse
+              Saars verjaardags-vierdaagse
             </h1>
             <span className="text-center text-xl text-slate-600">
               Gefeliciteerd sat ❤️

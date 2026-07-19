@@ -1,6 +1,6 @@
 import type { Gift } from "./types";
 
-export const END_DATE = new Date("2026-07-20");
+export const END_DATE = new Date("2026-07-21");
 
 export const GIFTS: Gift[] = [
   {

@@ -1,10 +1,12 @@
 import { Countdown } from "@/components/countdown";
+import { END_DATE } from "@/constants";
 import { getDaysLeft, getPercentageOfDay } from "@/helpers";
 import { Page } from "@/layout/page";
 import { useEffect, useState, type CSSProperties } from "react";
+import CountdownTimer from "react-countdown";
 
 export const CountdownView = () => {
-  const [percentageOfDay, setPercentageOfDay] = useState(getPercentageOfDay());
+  const percentageOfDay = getPercentageOfDay();
   //   const percentageOfDay = getPercentageOfDay();
 
   const [displayNumberOfDays, setDisplayNumberOfDays] = useState(0);
@@ -36,9 +38,11 @@ export const CountdownView = () => {
     >
       <Page.Center>
         <Countdown>
-          <h1 className="text-5xl">{displayNumberOfDays}</h1>
+          <h1 className="text-2xl">
+            <CountdownTimer date={END_DATE} />
+          </h1>
         </Countdown>
-{/* 
+        {/* 
         <input
           type="range"
           min="0"
