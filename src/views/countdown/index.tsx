@@ -39,7 +39,10 @@ export const CountdownView = () => {
       <Page.Center>
         <Countdown>
           <h1 className="text-2xl">
-            <CountdownTimer date={END_DATE} />
+            <CountdownTimer
+              onComplete={() => window.location.reload()}
+              date={END_DATE}
+            />
           </h1>
         </Countdown>
         {/* 

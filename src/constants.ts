@@ -1,6 +1,6 @@
 import type { Gift } from "./types";
 
-export const END_DATE = new Date("2026-07-21");
+export const END_DATE = new Date("2026-07-21T00:00:00+02:00");
 
 export const GIFTS: Gift[] = [
   {
@@ -16,11 +16,11 @@ export const GIFTS: Gift[] = [
   {
     name: "Boeken",
     description: "Een van Dua en een van mij",
-    imgSrc: "/boeken.png"
+    imgSrc: "/boeken.png",
   },
   {
     name: "Couples massage",
     description: "Als je wil, anders kan ik ook wat anders uitzoeken",
-    imgSrc: "/spa.png"
-  }
+    imgSrc: "/spa.png",
+  },
 ];
